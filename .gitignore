@@ -21,6 +21,9 @@ backend/.local-db.json
 # Keep the lightweight SVG posters; users add their own videos locally.
 frontend/public/videos/**/*.mp4
 
+# TypeScript build cache
+*.tsbuildinfo
+
 # AWS / local cert artifacts
 *.pem
 .aws/

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="w" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b8aa6"/>
+      <stop offset="0.6" stop-color="#146381"/>
+      <stop offset="1" stop-color="#0a3f54"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#w)"/>
+  <path d="M0 470 Q320 440 640 470 T1280 470 V720 H0 Z" fill="#0b4256" opacity="0.6"/>
+  <path d="M0 540 Q320 515 640 540 T1280 540 V720 H0 Z" fill="#082f3d" opacity="0.6"/>
+  <text x="640" y="360" fill="#dff1f8" font-family="sans-serif" font-size="34" font-weight="700" text-anchor="middle" opacity="0.85">Rivers around the world</text>
+  <text x="640" y="400" fill="#bfe3ef" font-family="sans-serif" font-size="18" text-anchor="middle" opacity="0.7">Your video will play here</text>
+</svg>

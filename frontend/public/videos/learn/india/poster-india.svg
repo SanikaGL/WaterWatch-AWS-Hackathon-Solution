@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="i" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f7a7a"/>
+      <stop offset="0.6" stop-color="#145a63"/>
+      <stop offset="1" stop-color="#0a3a44"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#i)"/>
+  <path d="M0 470 Q320 440 640 470 T1280 470 V720 H0 Z" fill="#0b4552" opacity="0.6"/>
+  <path d="M0 540 Q320 515 640 540 T1280 540 V720 H0 Z" fill="#083138" opacity="0.6"/>
+  <circle cx="640" cy="250" r="30" fill="#f0c35a" opacity="0.35"/>
+  <text x="640" y="360" fill="#eaf6f1" font-family="sans-serif" font-size="34" font-weight="700" text-anchor="middle" opacity="0.85">Rivers of India</text>
+  <text x="640" y="400" fill="#cfeae2" font-family="sans-serif" font-size="18" text-anchor="middle" opacity="0.7">Your video will play here</text>
+</svg>

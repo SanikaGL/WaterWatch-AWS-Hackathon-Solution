@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17788f"/>
+      <stop offset="0.5" stop-color="#0d4c5f"/>
+      <stop offset="1" stop-color="#082e3a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="700" fill="url(#g2)"/>
+  <!-- lake receiving water -->
+  <path d="M0 420 Q200 390 400 420 V700 H0 Z" fill="#0a3b4d" opacity="0.85"/>
+  <!-- drain pipe from side -->
+  <rect x="0" y="340" width="150" height="54" rx="8" fill="#2f3d44"/>
+  <ellipse cx="150" cy="367" rx="14" ry="27" fill="#141e22"/>
+  <!-- dark wastewater plume entering -->
+  <path d="M150 367 C210 380 250 400 230 470 C300 440 320 400 290 360 C250 350 190 352 150 367 Z" fill="#3b3326" opacity="0.75"/>
+  <path d="M150 380 C220 400 260 430 240 500 C150 470 130 420 150 380 Z" fill="#2a2415" opacity="0.6"/>
+  <!-- surface sheen -->
+  <ellipse cx="250" cy="450" rx="120" ry="24" fill="#1c5366" opacity="0.5"/>
+  <text x="200" y="650" fill="#cfe8f0" font-family="sans-serif" font-size="19" font-weight="700" text-anchor="middle" opacity="0.9">Wastewater &amp; pollution</text>
+</svg>

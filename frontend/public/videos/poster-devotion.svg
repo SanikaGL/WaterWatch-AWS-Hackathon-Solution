@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="d" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a6f8e"/>
+      <stop offset="0.55" stop-color="#0e4f68"/>
+      <stop offset="1" stop-color="#0a3346"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="700" fill="url(#d)"/>
+  <!-- water surface -->
+  <path d="M0 470 Q100 450 200 470 T400 470 V700 H0 Z" fill="#0b3f55" opacity="0.7"/>
+  <path d="M0 500 Q100 485 200 500 T400 500 V700 H0 Z" fill="#09333f" opacity="0.6"/>
+  <!-- floating offerings -->
+  <circle cx="120" cy="480" r="10" fill="#e8a23a" opacity="0.85"/>
+  <circle cx="150" cy="492" r="7" fill="#d9772f" opacity="0.8"/>
+  <circle cx="250" cy="486" r="9" fill="#e8a23a" opacity="0.8"/>
+  <circle cx="285" cy="498" r="6" fill="#c85c3c" opacity="0.75"/>
+  <circle cx="200" cy="476" r="6" fill="#f0c35a" opacity="0.8"/>
+  <!-- hands/figures silhouette -->
+  <path d="M90 440 q30 -60 60 0 z" fill="#071f29" opacity="0.5"/>
+  <path d="M250 440 q30 -70 60 0 z" fill="#071f29" opacity="0.5"/>
+  <text x="200" y="640" fill="#bfe3ef" font-family="sans-serif" font-size="20" font-weight="700" text-anchor="middle" opacity="0.9">Devotion &amp; water</text>
+</svg>

@@ -1,0 +1,26 @@
+node_modules/
+dist/
+build/
+.aws-sam/
+*.log
+.env
+.env.local
+.env.production
+.env.*.local
+.DS_Store
+coverage/
+.vite/
+samconfig.toml
+dynamodb-local-data/
+
+# Local in-memory DB snapshot
+.local-db.json
+backend/.local-db.json
+
+# Large media assets — too big for GitHub (hundreds of MB of .mp4).
+# Keep the lightweight SVG posters; users add their own videos locally.
+frontend/public/videos/**/*.mp4
+
+# AWS / local cert artifacts
+*.pem
+.aws/

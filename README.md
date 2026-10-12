@@ -116,21 +116,32 @@ The local server uses an in-memory, file-persisted DB and a dev-auth shim (heade
 
 ## Deploy to AWS
 
-See **[DEPLOY.md](DEPLOY.md)**. In short:
+**Full beginner-friendly, step-by-step instructions are in [DEPLOY.md](DEPLOY.md)** —
+it covers prerequisites, credentials, the TLS/esbuild gotchas, and every command.
 
-```powershell
-aws configure                 # once
+The short version:
+
+```bash
+# 0. install: Node 22, AWS CLI, SAM CLI, and `npm i -g esbuild`
+aws configure                 # set your keys + region (we used ap-south-1)
+
+# 1. backend
 sam build
-sam deploy --guided           # or: .\deploy.ps1
-# then build + sync the frontend to the site bucket (deploy.ps1 does this)
+sam deploy --guided           # first time; answer the prompts (Stage=dev, BedrockEnabled=true)
+
+# 2. frontend — put the stack Outputs into frontend/.env.production, then:
+cd frontend && npm install && npm run build && cd ..
+aws s3 sync frontend/dist "s3://<SiteBucketName>" --delete
+aws cloudfront create-invalidation --distribution-id <DistributionId> --paths "/*"
 ```
 
-Provision an authority login (admin, not self-signup):
+`sam deploy` prints an **Outputs** block — `SiteUrl` is your live public URL. Then
+provision an authority login (admin only, since authorities don't self-signup):
 
-```powershell
+```bash
 cd backend
-# env: AWS_REGION, USER_POOL_ID, TABLE_NAME
-npx tsx src/local/provisionAuthority.ts --email you@example.com --password "Pass@12345" `
+# env: AWS_REGION, USER_POOL_ID (from outputs), TABLE_NAME
+npx tsx src/local/provisionAuthority.ts --email you@example.com --password "Pass@12345" \
   --name "Officer Name" --taluk BELUR --designation "Taluk Water Officer" --department "Minor Irrigation Dept."
 ```
 
